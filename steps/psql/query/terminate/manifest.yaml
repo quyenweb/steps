@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  version: 1.0.0
   name: "postgresql_query_terminate"
   description: "Terminating a running Postgres query. It will terminate the Postgres query non-gracefully"
   vendor: postgres 

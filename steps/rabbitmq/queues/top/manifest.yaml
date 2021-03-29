@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  version: 1.0.0
   name: "rabbitmq_top_queues_analyze"
   description: "Get the top RabbitMQ queues by memory, messages, message_bytes and messages_ready keys"
   vendor: rabbitmq

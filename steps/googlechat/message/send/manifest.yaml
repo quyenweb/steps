@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  version: 1.0.0
   name: "googlechat_send_message"
   description: "Send a message to Google Chat via webhook"
   vendor: googlechat

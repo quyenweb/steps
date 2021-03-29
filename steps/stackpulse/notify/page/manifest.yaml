@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  version: 1.0.0
   name: "stackpulse_page"
   description: "Page a person using a phone call or SMS and receive an acknowledgment."
   vendor: stackpulse

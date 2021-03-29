@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  version: 1.0.0
   name: "postgresql_query_cancel"
   description: "Cancel a running Postgres query. It will shutdown the query gracefully."
   vendor: postgres 
