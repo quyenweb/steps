@@ -5,7 +5,7 @@ MANIFESTS := $(shell find steps -name "*.yaml" -type f -exec sh -c "head -3 {} |
 CONTAINER_REGISTRY ?= us-docker.pkg.dev/stackpulse/public
 MANIFEST_PATH ?= gs://stackpulse-steps/
 VENDORS_PATH ?= gs://stackpulse-public/
-MANIFEST_PARSER ?= gcr.io/stackpulse/step-manifest-parser:prd-21.01.0
+MANIFEST_PARSER ?= gcr.io/stackpulse/step-manifest-parser:prd-21.03.0
 
 
 TAG ?=
@@ -74,14 +74,15 @@ define declare-manifest-build-rule
 	$(eval                                                                                                                     \
 		$(MANIFESTDIR)/$($(1)_packname).yml: $(1) ; $$(info === packing $(1))
 			mkdir -p $$(dir $$@);
-			grep -q 'imageName:' $(1) && cp $(1) $$@ || docker run -w /root -v $(CURDIR):/root $(MANIFEST_PARSER) image set $(1) $$@ $(CONTAINER_REGISTRY)/$(call remove-step-prefix,$(call directory-name, $(1)))
-			docker run -w /root -v $(CURDIR):/root $(MANIFEST_PARSER) validate $$@
+			grep -q 'imageName:' $(1) && cp $(1) $$@
 	 )
 endef
 
 # create pack-$target, packall
 $(foreach manifest, $(MANIFESTS), $(call declare-manifest-build-rule,$(manifest)))
 packall: $(foreach manifest, $(MANIFESTS),pack-$(call rulename, $(manifest)))
+	docker run -w /root -v $(CURDIR):/root $(MANIFEST_PARSER) validate ./steps/...
+
 
 
 $(call declare-shortcut,indexfile,$(MANIFESTDIR)/indexfile.yml)
