@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/ansible/awx/job-events"
   version: 1.0.0
   name: "ansible_awx_job_events"
   description: "Prints stdout of the job until it finishes"

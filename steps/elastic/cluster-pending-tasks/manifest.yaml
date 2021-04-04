@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/elastic/cluster-pending-tasks"
   version: 1.0.0
   name: "elastic_cluster_pending_tasks"
   description: "Get elastic pending tasks."

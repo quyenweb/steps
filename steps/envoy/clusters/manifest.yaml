@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/envoy/clusters"
   version: 1.0.0
   name: "envoy_clusters"
   description: "Get clusters from Envoy's administrative interface."

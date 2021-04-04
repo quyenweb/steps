@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/utils/echo"
   version: 1.0.0
   name: "echo"
   description: "This step prints the given message to stdout."

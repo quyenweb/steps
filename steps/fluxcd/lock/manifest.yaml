@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/fluxcd/lock"
   version: 1.0.0
   name: "fluxcd_lock"
   description: "Use Flux client to lock or unlock to Kubernetes workload."

@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/elastic/cluster-stats"
   version: 1.0.0
   name: "elastic_cluster_stats"
   description: "Get elastic cluster stats."

@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/pagerduty/incident/create"
   version: 1.0.0
   name: "pagerduty_incident_create"
   description: "Create a new PagerDuty incident."

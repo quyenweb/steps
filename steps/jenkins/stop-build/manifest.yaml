@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/jenkins/stop-build"
   version: 1.0.0
   name: "jenkins_stop_build"
   description: "Stop a running build"

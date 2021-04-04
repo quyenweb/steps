@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/pagerduty/analytics/get-agg-service-data"
   version: 1.0.0
   name: "pagerduty_analytics_get_agg_service_data"
   description: "Get PagerDuty aggregated service data."

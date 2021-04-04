@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/rundeck/execution/info"
   version: 1.0.0
   name: "rundeck_execution_info"
   description: "Get execution info."

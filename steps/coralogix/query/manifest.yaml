@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/coralogix/query"
   version: 1.0.0
   name: "coralogix_query"
   description: "Perform an arbitrary Coralogix search query."

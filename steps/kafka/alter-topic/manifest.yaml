@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/kafka/alter-topic"
   version: 1.0.0
   name: "kafka_alter_topic"
   description: "Alter a Kafka topic configuration"

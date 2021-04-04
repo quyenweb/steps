@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/kafka/list-topics"
   version: 1.0.0
   name: "kafka_list_topics"
   description: "List all Kafka topics"

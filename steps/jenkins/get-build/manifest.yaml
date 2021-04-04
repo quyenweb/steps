@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/jenkins/get-build"
   version: 1.0.0
   name: "jenkins_get_build"
   description: "Return build details"

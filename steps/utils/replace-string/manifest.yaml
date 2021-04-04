@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/utils/replace-string"
   version: 1.0.0
   name: "replace_string"
   description: "This step replaces sub-string by another sub-string for give base64 string."

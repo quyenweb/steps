@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/kubectl/logs"
   version: 1.0.0
   name: "kubectl_logs"
   description: "Get pod logs"

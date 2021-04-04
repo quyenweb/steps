@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/pagerduty/escalation-policy/get"
   version: 1.0.0
   name: "pagerduty_escalation_policy_get"
   description: "Get PagerDuty escalation policy."

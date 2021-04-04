@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/kafka/consumer-group-delete"
   version: 1.0.0
   name: "kafka_delete_consumer_group"
   description: "Delete a consumer group"

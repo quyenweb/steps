@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/opsgenie/alert/acknowledge"
   version: 1.0.0
   name: "opsgenie_acknowledge_alert"
   description: "Acknowledge an OpsGenie alert."

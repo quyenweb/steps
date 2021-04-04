@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/atlassian/jira/update-issue-status"
   version: 1.0.0
   name: "atlassian_jira_update_issue_status"
   description: "Update the status of existing Jira issue"

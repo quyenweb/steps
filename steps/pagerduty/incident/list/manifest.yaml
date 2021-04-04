@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/pagerduty/incident/list"
   version: 1.0.0
   name: "pagerduty_incident_list"
   description: "List PagerDuty incidents."

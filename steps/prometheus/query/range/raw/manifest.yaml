@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/prometheus/query/range/raw"
   version: 1.0.0
   name: "prometheus_range_query"
   description: "Running raw range query on Prometheus."

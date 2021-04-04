@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/atlassian/jira/create-issue"
   version: 1.0.0
   name: "atlassian_jira_create_issue"
   description: "Create a new Jira issue"
@@ -47,7 +48,6 @@ envs:
     type: "string"
     required: true
     example: "myemail@mycompany.io"
-    example: "frontend-developer@stackpulse.io"
 
 integrations:
   - jira

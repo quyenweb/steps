@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/ansible/awx/hosts"
   version: 1.0.0
   name: "ansible_awx_hosts_list"
   description: "Return a list of available hosts"

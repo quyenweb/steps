@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/elastic/info"
   version: 1.0.0
   name: "elastic_info"
   description: "Get elastic info."

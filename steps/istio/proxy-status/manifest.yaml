@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/istio/proxy-status"
   version: 1.0.0
   name: "istio_proxy_status"
   description: "Run a proxy-status command on your Istio cluster."

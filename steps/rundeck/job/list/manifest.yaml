@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/rundeck/job/list"
   version: 1.0.0
   name: "rundeck_list_jobs"
   description: "List jobs in a Rundeck project."

@@ -5,7 +5,7 @@ MANIFESTS := $(shell find steps -name "*.yaml" -type f -exec sh -c "head -3 {} |
 CONTAINER_REGISTRY ?= us-docker.pkg.dev/stackpulse/public
 MANIFEST_PATH ?= gs://stackpulse-steps/
 VENDORS_PATH ?= gs://stackpulse-public/
-MANIFEST_PARSER ?= gcr.io/stackpulse/step-manifest-parser:prd-21.03.0
+MANIFEST_PARSER ?= gcr.io/stackpulse/step-manifest-parser:SP-5702
 
 
 TAG ?=
@@ -81,7 +81,7 @@ endef
 # create pack-$target, packall
 $(foreach manifest, $(MANIFESTS), $(call declare-manifest-build-rule,$(manifest)))
 packall: $(foreach manifest, $(MANIFESTS),pack-$(call rulename, $(manifest)))
-	docker run -w /root -v $(CURDIR):/root $(MANIFEST_PARSER) validate ./steps/...
+	docker run -w /root -v $(CURDIR):/root $(MANIFEST_PARSER) validate "/root/$(MANIFESTDIR)/*"
 
 
 

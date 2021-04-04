@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/redis/slowlog"
   version: 1.0.0
   name: "redis_slowlog"
   description: "Get the last Redis slowlog entries"

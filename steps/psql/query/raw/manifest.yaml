@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/psql/query/raw"
   version: 1.0.0
   name: "postgress_query"
   description: "Running raw SQL query on PosgreSQL Database."

@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/opsgenie/incident/close"
   version: 1.0.0
   name: "opsgenie_close_incident"
   description: "Change incident status to closed."

@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/utils/tabulate"
   version: 1.0.0
   name: "tabulate"
   description: "Generate ASCII table from given input"

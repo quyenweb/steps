@@ -2,6 +2,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/slack/channel/archive"
   version: 1.0.0
   name: "slack_archive_channel"
   description: "Archive slack channel."

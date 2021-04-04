@@ -2,6 +2,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/pagerduty/incident/resolve"
   version: 1.0.0
   name: "pagerduty_resolve_incident"
   description: "Resolve a PagerDuty incident."

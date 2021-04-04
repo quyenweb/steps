@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/logzio/query"
   version: 1.0.0
   name: "logzio_query"
   description: "Perform an arbitrary Logz.io search query."

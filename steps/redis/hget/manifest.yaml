@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/redis/hget"
   version: 1.0.0
   name: "redis_hget"
   description: "Perform Redis hget call, (https://redis.io/commands/hget)"

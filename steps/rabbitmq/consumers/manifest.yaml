@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/rabbitmq/consumers"
   version: 1.0.0
   name: "rabbitmq_consumers"
   description: "Get information about RabbitMQ consumers"

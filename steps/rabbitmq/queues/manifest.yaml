@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/rabbitmq/queues"
   version: 1.0.0
   name: "rabbitmq_queues"
   description: "Get information about RabbitMQ queues"

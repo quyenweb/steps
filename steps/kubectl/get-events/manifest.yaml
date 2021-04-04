@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/kubectl/get-events"
   version: 1.0.0
   name: "kubectl_get_events"
   description: "Get a Kubernetes resource event"

@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/psql/query/long-running-sessions"
   version: 1.0.0
   name: "postgresql_query_long_running_sessions"
   description: "Retrieve long-running sessions in PostgreSQL."

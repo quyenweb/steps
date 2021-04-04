@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/kubectl/get-configmap"
   version: 1.0.0
   name: "kubectl_get_configmap"
   description: "Get a Kubernetes configmap"

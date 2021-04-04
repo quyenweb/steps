@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/slack/message/dynamic"
   version: 1.0.0
   name: "slack_send_dynamic_message"
   description: "Send a simple text message, or snippet, to a Slack channel or user."

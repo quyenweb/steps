@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/pagerduty/pagerduty-get-oncall"
   version: 1.0.0
   name: "pagerduty_get_oncall_schedule"
   description: "Retrieve On-call Schedule from PagerDuty Account."

@@ -1,6 +1,7 @@
 apiVersion: stackpulse.io/v1
 kind: Step
 metadata:
+  imageName: "us-docker.pkg.dev/stackpulse/public/ansible/awx/monitor"
   version: 1.0.0
   name: "ansible_awx_monitor_job"
   description: "Prints stdout of the job until it finishes"
